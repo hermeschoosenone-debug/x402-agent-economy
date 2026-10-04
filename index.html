@@ -1,177 +1,172 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>x402 — The Agent Economy · Free sample + buy the book</title>
-  <meta name="description" content="x402 — The Agent Economy. The practitioner's guide to building and selling services machines will pay for. Free sample PDF and instant-download purchase.">
-  <style>
-    :root {
-      --ink: #1A1A1A;
-      --paper: #F5F5F0;
-      --burgundy: #8B0000;
-      --burgundy-deep: #6B1D2A;
-      --gold: #D4A547;
-      --line: rgba(26,26,26,.14);
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      font-family: ui-serif, Georgia, "Times New Roman", serif;
-      background: var(--paper);
-      color: var(--ink);
-      line-height: 1.55;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 56px 24px 64px;
-    }
-    header { border-bottom: 1px solid var(--line); padding-bottom: 22px; }
-    h1 {
-      font-size: clamp(28px, 4.5vw, 40px);
-      line-height: 1.1;
-      margin: 0 0 8px;
-      letter-spacing: -0.01em;
-    }
-    .sub {
-      font-size: 16px;
-      color: rgba(26,26,26,.72);
-      margin: 0;
-    }
-    .lede {
-      font-size: 19px;
-      margin: 22px 0 0;
-      color: rgba(26,26,26,.92);
-    }
-    .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin: 30px 0 34px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 14px 22px;
-      border-radius: 10px;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 15px;
-      font-weight: 600;
-      text-decoration: none;
-      letter-spacing: 0.01em;
-      border: 1px solid transparent;
-    }
-    .btn-primary {
-      background: var(--burgundy);
-      color: var(--paper);
-    }
-    .btn-primary:hover { background: var(--burgundy-deep); }
-    .btn-ghost {
-      background: transparent;
-      color: var(--ink);
-      border-color: var(--line);
-    }
-    .btn-ghost:hover { border-color: var(--ink); }
-    section { padding: 22px 0; border-top: 1px solid var(--line); }
-    section:first-of-type { border-top: none; padding-top: 0; }
-    h2 {
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 13px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      margin: 0 0 12px;
-      color: rgba(26,26,26,.6);
-    }
-    ul { margin: 0; padding-left: 18px; }
-    li { margin: 6px 0; }
-    .meta {
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color: rgba(26,26,26,.7);
-    }
-    .meta strong { color: var(--ink); }
-    footer {
-      margin-top: 28px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
-      font-size: 13px;
-      color: rgba(26,26,26,.55);
-    }
-    a { color: var(--burgundy); }
-    a:hover { color: var(--burgundy-deep); }
-    @media (prefers-reduced-motion: reduce) {
-      * { transition: none !important; animation: none !important; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>x402 — The Agent Economy | Build services machines will pay for</title>
+<meta name="description" content="The practitioner's guide to building and selling machine-native services on the x402 payment rail. 121 pages, 12 chapters, 19 working code blocks. Free sample — no signup. Buy the full PDF for $29, by card or by paying the endpoint itself in USDC.">
+<link rel="canonical" href="https://hermeschoosenone-debug.github.io/x402-agent-economy/">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="Facilitator Press">
+<meta property="og:type" content="book">
+<meta property="og:title" content="x402 — The Agent Economy">
+<meta property="og:description" content="Building and selling services machines will pay for. 121 pages, 12 chapters, 19 code blocks — written from a production x402 catalogue settling real USDC on Base.">
+<meta property="og:url" content="https://hermeschoosenone-debug.github.io/x402-agent-economy/">
+<meta property="og:image" content="https://raw.githubusercontent.com/hermeschoosenone-debug/x402-agent-economy/main/cover.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="x402 — The Agent Economy">
+<meta name="twitter:description" content="Your next customer might not be a person. The practitioner's guide to the x402 payment rail — 121 pages, 19 code blocks, free sample.">
+
+<!-- Machine-readable hints for agents that land here -->
+<link rel="alternate" type="application/json" href="https://x402.synthexforge.com/api/ebook" title="x402 machine-readable product card">
+<link rel="service-desc" type="application/json" href="https://x402.synthexforge.com/openapi.json">
+<link rel="service-doc" type="text/plain" href="https://x402.synthexforge.com/llms.txt">
+
+<style>
+  :root{
+    --paper:#f6f5f0; --ink:#17161d; --ink-70:rgba(23,22,29,.72); --ink-50:rgba(23,22,29,.52);
+    --line:rgba(23,22,29,.14); --brand:#5b3df5; --brand-deep:#3a2a9e; --accent:#0e9594;
+    --mono:"SFMono-Regular",ui-monospace,"JetBrains Mono",Menlo,Consolas,monospace;
+    --sans:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --serif:Georgia,"Times New Roman",serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+       line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:880px;margin:0 auto;padding:0 22px}
+  header{padding:56px 0 0}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-50)}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5.5vw,54px);line-height:1.08;margin:.35em 0 .3em;letter-spacing:-.01em}
+  .sub{font-family:var(--serif);font-size:clamp(19px,2.4vw,23px);color:var(--ink-70);margin:0 0 1.1em}
+  .lede{font-size:clamp(16px,2vw,18.5px);color:var(--ink-70);max-width:62ch}
+  .lede strong{color:var(--ink)}
+  hr.rule{border:0;border-top:1px solid var(--line);margin:28px 0}
+
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin:30px 0 8px}
+  .btn{display:inline-block;text-decoration:none;font-weight:600;font-size:16.5px;
+       padding:14px 22px;border-radius:10px;letter-spacing:.01em}
+  .btn-buy{background:var(--brand);color:#fff;box-shadow:0 6px 18px rgba(91,61,245,.28)}
+  .btn-buy em{font-style:normal;opacity:.85;font-weight:500}
+  .btn-sample{background:transparent;color:var(--ink);border:1px solid var(--ink-70)}
+  .btn:active{transform:translateY(1px)}
+  .micro{font-family:var(--mono);font-size:12.5px;color:var(--ink-50);margin-top:10px}
+
+  h2{font-family:var(--serif);font-weight:400;font-size:clamp(24px,3.4vw,30px);margin:52px 0 16px;letter-spacing:-.005em}
+  h2 .no{font-family:var(--mono);font-size:12px;color:var(--brand);letter-spacing:.2em;display:block;margin-bottom:8px;text-transform:uppercase}
+  ul.clean{list-style:none;margin:0;padding:0}
+  ul.clean li{padding:13px 0;border-top:1px solid var(--line);font-size:16.5px}
+  ul.clean li:last-child{border-bottom:1px solid var(--line)}
+  ul.clean b{display:block;font-size:16.5px}
+  ul.clean span.det{color:var(--ink-70);font-size:15.5px}
+  .facts{display:flex;flex-wrap:wrap;gap:26px;margin:8px 0 4px}
+  .fact b{font-family:var(--serif);font-size:30px;font-weight:400;display:block;line-height:1}
+  .fact span{font-family:var(--mono);font-size:12px;color:var(--ink-50);letter-spacing:.08em;text-transform:uppercase}
+
+  .quote{border-left:3px solid var(--brand);padding:4px 0 4px 18px;color:var(--ink-70);
+         font-family:var(--serif);font-size:19px;margin:26px 0}
+
+  .x402box{margin-top:22px;padding:20px 20px;border:1px solid var(--line);border-radius:12px;background:#fff}
+  .x402box h3{font-family:var(--mono);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-50);margin:0 0 10px;font-weight:600}
+  .x402flow{font-family:var(--mono);font-size:13px;line-height:1.8;color:var(--ink)}
+  .x402flow .k{color:var(--accent)}
+  .x402box a{color:var(--brand)}
+
+  footer{margin-top:60px;padding:26px 0 46px;border-top:1px solid var(--line);color:var(--ink-50);font-size:14px}
+  footer a{color:var(--ink-70)}
+  @media(max-width:520px){ body{font-size:16px} .btn{width:100%;text-align:center} }
+</style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>x402 — The Agent Economy</h1>
-      <p class="sub">Building and Selling Services Machines Will Pay For</p>
-    </header>
+<div class="wrap">
 
-    <p class="lede">
-      Your next customer might not be a person. Agents are starting to buy things — and they
-      pay in the same HTTP round-trip. This is the practitioner's guide to actually shipping
-      on the x402 payment rail, written from services that are live on Base mainnet.
-    </p>
+<header>
+  <div class="eyebrow">Facilitator Press &middot; An imprint of Synthex Forge</div>
+  <h1>x402 — The Agent Economy</h1>
+  <p class="sub">Building and selling services machines will pay for.</p>
+  <p class="lede"><strong>Your next customer might not be a person.</strong> Agents are starting to
+  buy things — they don&rsquo;t sign up, don&rsquo;t log in, and don&rsquo;t fill out a form. They find a
+  service, call it, pay for it in the same HTTP round-trip, and move on, often in under a second.
+  <code>x402</code> is the payment rail that makes this possible. This is the practitioner&rsquo;s guide
+  to actually shipping on it.</p>
 
-    <div class="cta-row">
-      <a class="btn btn-primary" href="https://synthexforge.com/ebook">Get the book — $29 (instant PDF)</a>
-      <a class="btn btn-ghost" href="https://synthexforge.com/sample">Read the free sample</a>
-    </div>
-
-    <section>
-      <h2>What's inside</h2>
-      <ul>
-        <li><strong>121 pages, ~25,000 words</strong> — 12 chapters plus three appendices</li>
-        <li><strong>19 working code blocks</strong> — server skeleton, payment verification, Ed25519 signing, <code>llms.txt</code> and <code>agent-card.json</code> templates</li>
-        <li><strong>Real, measured market data</strong> — what's actually selling across ~2,900 catalogued services, labelled honestly, including where the numbers mislead</li>
-        <li><strong>The pricing chapter</strong> — what machines actually pay, from $0.001 to $2.00, and why price elasticity works differently when the buyer is software</li>
-        <li><strong>The discovery chapter</strong> — the part nobody tells you: a payment rail is not distribution</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Written from services live right now</h2>
-      <p>
-        Most writing about agentic commerce is theory. This isn't. It's built from a
-        production catalogue of x402 services settling real USDC on Base mainnet — including
-        the parts that went wrong: the IP leak through a reverse proxy, the placeholder that
-        nearly shipped to a paid catalogue, the eight-hour build deadlock from a lost worker
-        lock, the test that wrote fabricated revenue into production.
-      </p>
-      <p>
-        Live proof:
-        <a href="https://x402.synthexforge.com">x402.synthexforge.com</a> — public catalogue,
-        paid endpoints settling on-chain.
-      </p>
-    </section>
-
-    <section>
-      <h2>Who it's for</h2>
-      <p>
-        Developers, AI engineers, and technical founders who can write code but haven't shipped
-        an x402 service yet. You need to be comfortable with HTTP and a terminal. You do not
-        need to know anything about x402 going in.
-      </p>
-    </section>
-
-    <section>
-      <h2>Format</h2>
-      <p class="meta">
-        <strong>PDF</strong> · 121 pages · DRM-free · instant download · $29.
-        Imprint: <strong>Facilitator Press</strong>, an imprint of Synthex Forge.
-      </p>
-    </section>
-
-    <footer>
-      <p>© 2026 Facilitator Press. This page contains promotional material only; the full manuscript is not hosted here.</p>
-    </footer>
+  <div class="cta-row">
+    <a class="btn btn-buy" href="https://synthexforge.com/ebook">Get the full book — <em>$29</em></a>
+    <a class="btn btn-sample" href="https://synthexforge.com/sample">Read the free sample</a>
   </div>
+  <div class="micro">PDF &middot; instant download &middot; no account &middot; &mdash; or pay the endpoint itself in USDC (below)</div>
+</header>
+
+<hr class="rule">
+
+<section id="inside">
+  <h2><span class="no">Inside</span>What&rsquo;s in the book</h2>
+  <div class="facts">
+    <div class="fact"><b>121</b><span>pages</span></div>
+    <div class="fact"><b>12</b><span>chapters</span></div>
+    <div class="fact"><b>19</b><span>code blocks</span></div>
+    <div class="fact"><b>~2,900</b><span>services measured</span></div>
+  </div>
+  <ul class="clean">
+    <li><b>19 working code blocks</b><span class="det">Server skeleton, the payment-verification flow, Ed25519 signing &amp; verification, <code>llms.txt</code> and <code>agent-card.json</code> templates you can run.</span></li>
+    <li><b>Real, measured market data</b><span class="det">What&rsquo;s actually selling across a catalogue of ~2,900 services — with the numbers labelled honestly, including where they mislead.</span></li>
+    <li><b>The pricing chapter</b><span class="det">What machine buyers actually pay, from $0.001 to $2.00, and why elasticity works differently when the buyer is software.</span></li>
+    <li><b>The discovery chapter</b><span class="det">The part nobody tells you: a payment rail is not distribution. Where agents actually look.</span></li>
+    <li><b>Launch checklist + glossary</b><span class="det">From <code>402</code> envelope to a settled sale.</span></li>
+  </ul>
+</section>
+
+<section id="proven">
+  <h2><span class="no">Proven</span>Written from services that are live right now</h2>
+  <p class="lede">Most writing about agentic commerce is theory. This isn&rsquo;t. It&rsquo;s built from a
+  production catalogue of x402 services settling USDC on Base mainnet — <strong>including the parts that
+  went wrong</strong>: the IP leak through a reverse proxy, the placeholder endpoint that nearly shipped,
+  the eight-hour deadlock, the test that wrote fabricated revenue into a production store. Those chapters
+  exist because the author made those mistakes, not because they read about them somewhere.</p>
+  <p class="lede">Live proof: the catalogue behind the book is public at
+  <a href="https://x402.synthexforge.com">x402.synthexforge.com</a> — paid endpoints settling real USDC on Base.</p>
+</section>
+
+<section id="buy-x402">
+  <h2><span class="no">Buy over x402</span>Buy this book with the protocol this book teaches</h2>
+  <p class="lede">If your agent speaks x402, it can buy the full PDF directly from the endpoint — no
+  checkout page, no email. The strongest proof of the book&rsquo;s thesis is that the book itself is sold
+  this way.</p>
+  <div class="x402box">
+    <h3>x402 purchase flow</h3>
+    <div class="x402flow">
+      <div><span class="k">GET</span> https://x402.synthexforge.com/api/ebook/download</div>
+      <div>&darr; <span class="k">402 Payment Required</span> &middot; PAYMENT-REQUIRED envelope: 29,000,000 atomic USDC (=$29.00), eip155:8453 (Base)</div>
+      <div>&darr; sign EIP-3009 transferWithAuthorization &middot; retry with PAYMENT-SIGNATURE</div>
+      <div>&darr; <span class="k">200 OK</span> &middot; the full PDF (121 pages) is delivered</div>
+    </div>
+    <p style="margin:14px 0 0;font-size:14px;color:var(--ink-70)">
+      Machine-readable product card:
+      <a href="https://x402.synthexforge.com/api/ebook"><code>GET /api/ebook</code></a> &middot;
+      free sample:
+      <a href="https://x402.synthexforge.com/api/ebook/sample"><code>GET /api/ebook/sample</code></a>
+    </p>
+  </div>
+</section>
+
+<section id="who">
+  <h2><span class="no">Who</span>Who it&rsquo;s for — and not for</h2>
+  <p class="lede"><strong>For:</strong> developers, AI engineers and technical founders who can write code
+  but haven&rsquo;t shipped an x402 service yet. You need to be comfortable with HTTP and a terminal. You do
+  not need to know anything about x402 going in.</p>
+  <p class="lede"><strong>Not for:</strong> anyone looking for hype or a get-rich-quick angle. The economics
+  chapter is deliberately unglamorous — most listings in this market earn approximately nothing, and the
+  book says so plainly.</p>
+</section>
+
+<footer>
+  <p>&copy; 2026 Facilitator Press, an imprint of
+  <a href="https://synthexforge.com">Synthex Forge</a>. Full book:
+  <a href="https://synthexforge.com/ebook">synthexforge.com/ebook</a> &middot; machine purchase:
+  <code>x402.synthexforge.com/api/ebook/download</code>.</p>
+</footer>
+
+</div>
 </body>
 </html>
